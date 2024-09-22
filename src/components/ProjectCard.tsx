@@ -13,7 +13,7 @@ export function ProjectCard({
 		<div
 			onClick={() => href && window.open(href)}
 			//at some point i will only add cursor-pointer if href is defined
-			className="cursor-pointer relative w-4/5 h-16 border-2 border-ctp-surface1 rounded-lg flex items-center justify-center overflow-hidden hover:border-ctp-maroon"
+			className="transition ease-in-out duration-200 cursor-pointer relative w-4/5 h-16 border-2 border-ctp-surface1 rounded-lg flex items-center justify-center overflow-hidden hover:border-ctp-maroon"
 		>
 			{asset && (
 				<img

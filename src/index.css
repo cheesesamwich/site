@@ -11,5 +11,5 @@
 }
 
 .hyperlink {
-	@apply text-2xl hover:scale-110 transition ease-in-out duration-150;
+	@apply text-2xl hover:scale-110 transition ease-in-out duration-150 hover:shadow-lg;
 }
