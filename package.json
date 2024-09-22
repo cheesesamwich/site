@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite --host",
+    "start": "vite",
     "build": "vite build",
     "post": "gh-pages -d dist",
     "deploy": "./deploy.sh"

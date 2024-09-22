@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-border {
+	@apply border-2 border-ctp-surface0 transition ease-in-out hover:border-ctp-mauve duration-200;
+}
+
+.grid-bio {
+	@apply items-center justify-center flex flex-col hover-border rounded-lg text-center;
+}
+
+.hyperlink {
+	@apply text-2xl hover:scale-110 transition ease-in-out duration-150;
+}
