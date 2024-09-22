@@ -29,19 +29,19 @@ function App() {
 						<Hyperlink
 							text={'Github'}
 							href={'https://github.com/cheesesamwich'}
-							colour={'teal'}
+							className={'hyperlink text-ctp-teal'}
 						/>
 						<Hyperlink
 							text={'Last.fm'}
 							href={'https://www.last.fm/user/cheesesamwich'}
-							colour={'peach'}
+							className={'hyperlink text-ctp-peach'}
 						/>
 						<Hyperlink
 							text={'Discord'}
 							href={
 								'https://discord.com/users/976176454511509554'
 							}
-							colour={'blue'}
+							className={'hyperlink text-ctp-blue'}
 						/>
 					</div>
 				</div>
