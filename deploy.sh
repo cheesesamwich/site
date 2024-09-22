@@ -3,5 +3,5 @@ git add .
 git commit -m "$commitName"
 git push
 npm run build 
-echo \"samwich.dev\" > dist/CNAME
+echo samwich.dev > dist/CNAME
 npm run post
