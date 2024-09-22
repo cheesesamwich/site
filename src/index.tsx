@@ -1,35 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
-function GameCard({
-	name,
-	href,
-	asset,
-}: {
-	name: string;
-	href?: string;
-	asset?: string;
-}) {
-	return (
-		<div
-			onClick={() => href && window.open(href)}
-			className="cursor-pointer relative w-4/5 h-16 border-2 border-ctp-surface1 rounded-lg flex items-center justify-center overflow-hidden hover:border-ctp-maroon"
-		>
-			{asset && (
-				<img
-					src={asset}
-					alt={name}
-					className="blur-sm absolute inset-0 w-full h-full object-cover opacity-0 hover:opacity-75 transition-opacity duration-300 ease-in-out"
-				/>
-			)}
-			<h1 className="text-2xl text-ctp-text pointer-events-none z-10">
-				{name}
-			</h1>
-		</div>
-	);
-}
-
+import { ProjectCard } from './components/ProjectCard';
 function App() {
 	return (
 		<div className="w-screen h-screen bg-ctp-base flex items-center justify-center">
@@ -42,18 +14,14 @@ function App() {
 				</div>
 				<div className="flex flex-row h-1/2 w-full gap-5">
 					<div className="grid-bio h-full w-1/2 gap-5">
-						<GameCard
-							name={'Lucida CLI'}
-							href={'https://github.com/cheesesamwich/lucidacli'}
-						/>
-						<GameCard
-							name={'Site'}
-							href={'https://github.com/cheesesamwich/site'}
-						/>
-						<GameCard
-							name={'Gort'}
-							href={'https://github.com/cheesesamwich/Gort'}
-						/>
+						{Object.entries({
+							'Lucida CLI':
+								'https://github.com/cheesesamwich/lucidacli',
+							Site: 'https://github.com/cheesesamwich/site',
+							Gort: 'https://github.com/cheesesamwich/Gort',
+						}).map(([name, href]) => (
+							<ProjectCard name={name} href={href} />
+						))}
 					</div>
 					<div className="grid-bio h-full w-1/2 gap-5">
 						<h1 className="hyperlink text-ctp-teal">
