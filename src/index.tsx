@@ -32,14 +32,6 @@ function App() {
 								Github
 							</a>
 						</h1>
-						<h1 className="hyperlink text-ctp-red">
-							<a
-								href="https://www.youtube.com/channel/UCKuGO0SCyxax4934fIcStvA"
-								target="_blank"
-							>
-								Youtube
-							</a>
-						</h1>
 						<h1 className="hyperlink text-ctp-peach">
 							<a
 								href="https://www.last.fm/user/cheesesamwich"
